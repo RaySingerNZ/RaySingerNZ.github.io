@@ -1,14 +1,15 @@
 ---
 layout: default
 title: Neat Starter
+testData: Data
 path: home
 ---
 
 <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
   <h1>
-    Welcome to
+    Welcome to the
     <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
+      {{title}} {{testData}}
     </strong>
   </h1>
 
@@ -17,6 +18,25 @@ path: home
     Starter Template. Get Started by editing.
     <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
   </p>
+
+  <!-- Toggle B -->
+  <div class="flex items-center justify-center w-full mb-12">
+    <label for="darkMode" class="flex items-center cursor-pointer">
+      <!-- toggle -->
+      <div class="relative" >
+        <!-- input -->
+        <input type="checkbox" id="darkMode" class="sr-only" @click="isNight = !isNight">
+        <!-- line -->
+        <div class="block bg-gray-600 w-14 h-8 rounded-full" :class="[isNight ? 'bg-gray-600' : 'bg-red-600']"></div>
+        <!-- dot -->
+        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition duration-500"></div>
+      </div>
+      <!-- label -->
+      <div class="ml-3 text-gray-700 font-medium">
+        Dark Mode
+      </div>
+    </label>
+  </div>
 
   {% include "./_includes/partials/content.html" %}
 </div>

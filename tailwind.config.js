@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   purge: {
     mode: "all",
     content: ["./**/*.html"],
@@ -14,6 +15,10 @@ module.exports = {
       colors: {},
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      textOpacity: ['dark']
+    }
+  },
   plugins: [require("@tailwindcss/typography")],
 };

@@ -12,6 +12,13 @@ h3 {
   @apply text-2xl font-bold mb-3;
 }
 
+
+/* Dark Mode Toggle */
+#darkMode:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: black;
+}
+
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],

@@ -1,10 +1,16 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
+  - text: About
+    url: "/about"
+  - text: UX & Web
+    url: "/ux-web"
+  - text: Design
+    url: "/design"
+  - text: Software
+    url: "/software"
+  - text: Sound
+    url: "/sound"
+  - text: Play
+    url: "/play"
   - text: Blog
     url: "/blog"

@@ -16,21 +16,20 @@
   {% if prism == true %}
   <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
   {% endif %}
-
+  <script src="/static/js/custom.js"></script>
+  <script src="/static/js/alpine.js"></script>
 </head>
 
 <body>
   <!-- <div class="h-screen w-screen"> -->
   <div x-data="myApp()" class="h-screen w-screen" :class="[isDark ? 'dark' : 'light']">
     <div class="bg-white dark:bg-black">
+
       {% include "./partials/navbar.html" %}
 
       {{ content | safe }}
 
       {% include "./partials/footer.html" %}
-
-      <script src="/static/js/custom.js"></script>
-      <script src="/static/js/alpine.js"></script>
 
       {% if path == "home" %}
       <!-- Netlify Identity Widget -->

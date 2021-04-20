@@ -12,7 +12,20 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        teal: {
+          light: '#00eaf8',
+          DEFAULT: '#00838e',
+          dark: '#00616c',
+        },
+        mawhero: {
+          light: '#E300BC',
+          DEFAULT: '#d800b2',
+          dark: '#a50084',
+        }
+      }
     },
   },
   variants: {

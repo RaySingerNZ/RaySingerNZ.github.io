@@ -1,16 +1,14 @@
 ---
 items:
+  - text: UX Design
+    url: "/ux-design"
+  - text: Software Dev
+    url: "/software-dev"
+  - text: Sound Design
+    url: "/sound-design"
+  - text: The Workshop
+    url: "/the-workshop"
   - text: About
     url: "/about"
-  - text: UX & Web
-    url: "/ux-web"
-  - text: Design
-    url: "/design"
-  - text: Software
-    url: "/software"
-  - text: Sound
-    url: "/sound"
-  - text: Play
-    url: "/play"
   - text: Blog
     url: "/blog"

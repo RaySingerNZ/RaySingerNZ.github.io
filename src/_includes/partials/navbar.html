@@ -68,24 +68,22 @@
                         href="{{ item.url }}">{{ item.text }}</a>
                 </li>
                 {% endfor %}
-
-
             </ul>
-            <div class="pt-6 lg:pt-0 list-reset md:flex justify-center flex-2">
+            <!-- <div class="pt-6 lg:pt-0 list-reset md:flex justify-center flex-2">
                 <label for="darkMode" class="flex items-center cursor-pointer">
-                    <!-- toggle -->
+                    !-- toggle --
                     <div class="relative">
-                        <!-- input -->
+                        !-- input --
                         <input type="checkbox" id="darkMode" class="sr-only" x-model="isDark" @click="setDark()">
-                        <!-- line -->
+                        !-- line --
                         <div class="block w-14 h-8 rounded-full" :class="[isDark ? 'bg-gray-500' : 'bg-gray-700']">
                         </div>
-                        <!-- dot -->
+                        !-- dot --
                         <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition duration-100"
                             :class="[isDark ? 'bg-gray-500' : 'bg-yellow-500']">
                         </div>
                     </div>
-                    <!-- label -->
+                    !-- label --
                     <div class="ml-3 text-gray-700 font-medium">
 
                     </div>

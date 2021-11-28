@@ -22,8 +22,7 @@
 <body>
   <script src="/static/js/custom.js"></script>
   <script src="/static/js/alpine.js"></script>
-  <!-- <div class="h-screen w-screen"> -->
-  <div x-data="myApp()" class="h-screen w-screen" :class="[isDark ? 'dark' : 'light']">
+  <div x-data="myApp()" class="h-screen w-full" :class="[isDark ? 'dark' : 'light']">
     <div class="bg-white dark:bg-black">
 
       {% include "./partials/navbar.html" %}
